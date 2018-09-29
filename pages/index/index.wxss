@@ -1,0 +1,85 @@
+
+page {
+    background-color: #305066;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+}
+
+.reset {
+    color: #9966FF;
+    text-align: center;
+}
+.title {
+    text-align: center;
+    color: #00CC66;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title text{
+    flex: 0.3;
+}
+
+.title .center{
+    flex: 1;
+}
+
+.mycanvas {
+    width: 100vw;
+    height: 100vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #305066;
+}
+
+.adv{
+    padding: 10px;
+}
+
+.adv .tips{
+    color: white;
+    font-size: 14px;
+    margin: 0px auto;
+}
+
+.items{
+    display: flex;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.adv{
+    margin-top: -12px;
+}
+
+.adv .item-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.adv .item-name{
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.item-name::after{
+    border: none;
+}
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
