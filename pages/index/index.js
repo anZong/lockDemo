@@ -10,7 +10,7 @@ Page({
     onLoad: function () {
         wx.getSystemInfo({
             success: (res) => {
-                let w = res.windowWidth * 0.8;
+                let w = res.windowWidth * 0.9;
                 this.setData({
                     width:w
                 })
@@ -36,5 +36,11 @@ Page({
         this.setData({
             title: newTitle
         });
+    },
+    loaderr(e){
+        console.log(e.detail.errCode);
+        wx.showToast({
+            title: e.detail && e.detail.errCode,
+        })
     }
 });
