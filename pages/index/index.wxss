@@ -18,6 +18,7 @@ page {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .title text{
@@ -29,8 +30,8 @@ page {
 }
 
 .mycanvas {
-    width: 100vw;
-    height: 100vw;
+    width: 80vw;
+    height: 75vw;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: #305066;
@@ -40,10 +41,10 @@ page {
     padding: 10px;
 }
 
-.adv .tips{
-    color: white;
-    font-size: 14px;
-    margin: 0px auto;
+.tips{
+    color: #666;
+    font-size: 12px;
+    margin: 10px auto;
 }
 
 .items{
@@ -57,7 +58,7 @@ page {
 }
 
 .adv{
-    margin-top: -12px;
+    margin-top: 0;
 }
 
 .adv .item-logo{
@@ -79,7 +80,24 @@ page {
 }
 
 .banner{
-    position: absolute;
-    bottom: 0;
     width: 100vw;
+    min-height: 90px;
+}
+
+.hide{
+    display: none;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 2px;
+}
+
+.top{
+    position: absolute;
+    top: 0;
+}
+.center{
+    display: block;
+    text-align: center;
 }

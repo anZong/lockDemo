@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="container">
+    <view class='banner'>
+        <ad unit-id="adunit-3e292876461b1388"></ad>
+    </view>
     <view class="title">
         <text class='left'></text>
         <text class='center'>{{title}}</text>
@@ -8,8 +11,14 @@
     <canvas canvas-id="canvasLock" class="mycanvas" bindtouchend="onTouchend"
       bindtouchstart="onTouchstart" bindtouchmove="onTouchmove"></canvas>
     <!-- <view class="reset" bindtap="resetPwd">重置密码</view> -->
-    <view class='adv'>
-        <view class='tips'>相关小程序</view>
+    <slider min='3' max='7' block-size='12' value='{{chooseType}}' show-value='true' bindchange='change'></slider>
+    <view class='center'>
+        <text class='tips'>提示：此程序仅做演示用，并不能真正锁屏！</text>
+    </view>
+    <view class='banner bottom'>
+        <ad unit-id="adunit-e1c1cbd51cf308c3"></ad>
+    </view>
+    <view class='adv hide'>
         <view class='items'>
             <navigator class='item' target='miniProgram' app-id='wx663533fb210346e4'>
                 <image class='item-logo' src='../../images/rss.jpg'></image>
@@ -20,8 +29,5 @@
                 <button class='item-name' open-type='contact'>软件开发咨询</button>
             </view>
         </view>
-    </view>
-    <view class='banner'>
-        <ad unit-id="adunit-e1c1cbd51cf308c3"></ad>
     </view>
 </view>
